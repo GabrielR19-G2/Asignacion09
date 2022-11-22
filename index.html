@@ -2,43 +2,46 @@
 <!--
     index.html
 
-    Esta página HTML es la interfaz de usuario de la aplicación Web 
-    Asignación 09. 
+    Esta página HTML es la interfaz de usuario de la aplicación Web VideocentroWebAJAX. 
+
+    Karla Ximena Islas Cruz ID: 213090
+    Gabriel Francisco Piñuelas Ramos ID: 230626
 -->
 <html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/biblioteca.js"></script>
+        <script type="text/javascript" src="js/inventarios.js"></script>
+        <script type="text/javascript" src="js/revistas.js"></script>
+        <title>Biblioteca Web AJAX</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-    <script type="text/javascript" src="js/utils.js"></script>
-    <script type="text/javascript" src="js/biblioteca.js"></script>
-    <script type="text/javascript" src="js/revistas.js"></script>
-    <script type="text/javascript" src="js/inventarios.js"></script>
-    <title>Asignación 09</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <body>
+        <div class="contenedorGrid"> 
+            <header>
+                <img class= "logo" src="imagenes/logo.png" alt="Logotipo">
+                <h1>Biblioteca web</h1>
+            </header>
+            
+            <nav id="navId">
+            </nav>
+            
+            <main id="mainId">
+            </main>
 
-<body>
-    <div class="contenedorGrid">
-        <header>
-            <img alt="titulo" src="imagenes/titulo.PNG" width="800" height="150">
-        </header>
-
-        <nav id="navId">
-        </nav>
-
-        <main id="mainId">
-        </main>
-
-        <footer>
-            <p>Ximena Islas <br>
-                Gabriel Piñuelas </p>
-        </footer>
-
-        <script type="text/javascript">
-            despliegaMenuPrincipal();
-        </script>
-    </div>
-</body>
-
+            <footer>
+                <p>
+                    Gabriel Francisco Piñuelas Ramos: gabriel.pinuelas230626@potros.itson.edu.mx <br>
+                    Karla Ximena Islas Cruz: karla.islas213090@potros.itson.edu.mx
+                </p>
+            </footer>
+            
+            <script type="text/javascript">
+                despliegaMenuPrincipal();
+            </script>
+        </div>
+    </body>
 </html>

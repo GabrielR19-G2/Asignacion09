@@ -8,6 +8,9 @@
  * desplegar una lista de seleccion, desplegar una tabla
  * con los atributos de un objeto. desplegar una tabla
  * con la primera columna conteniendo casillas de verificacion
+ * 
+ * Karla Ximena Islas Cruz ID: 213090
+ * Gabriel Francisco Piñuelas Ramos ID: 230626
  */
 
 /**
