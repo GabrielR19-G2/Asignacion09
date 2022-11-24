@@ -28,7 +28,7 @@ const menuInventarioItems = ["Inventariar revista", "Desinventariar revista",
                              "Consultar inventario de revistas", "Página Inicial"];
 
 // Funciones que implementan las operaciones con el inventario de revistas   
-const menuInventarioFunciones = ["", "", "", "",  
+const menuInventarioFunciones = ["capturaRevistaInventariar()", "", "despliegaInventarioRevistas()",  
                                "despliegaMenuPrincipal()"];
 
 /**
