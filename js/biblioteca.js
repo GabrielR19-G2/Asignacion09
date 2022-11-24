@@ -25,7 +25,7 @@ const menuRevistasFunciones = ["capturaIsbn()", "", "", "despliegaRevistas()",
 
 // Opciones del menu de las operaciones con el inventario de revistas  
 const menuInventarioItems = ["Inventariar revista", "Desinventariar revista",
-                             "Consultar inventario de revistas", "Página Inicial"];
+                             "Consultar inventario", "Página Inicial"];
 
 // Funciones que implementan las operaciones con el inventario de revistas   
 const menuInventarioFunciones = ["capturaRevistaInventariar()", "", "despliegaInventarioRevistas()",  
