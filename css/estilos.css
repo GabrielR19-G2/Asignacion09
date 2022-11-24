@@ -193,11 +193,15 @@ table.bicolor td {
     border: 1px solid #888;
 }
 
+
+/* Regla de estilo para las tablas
+   utilizadas en div para  las tablas en la que se despliegan las listas */
 div.tabla {
     display: table;
     margin: auto;
 }
 
+/* Regla de estilo para los titulos de las tablas */
 div.tituloTabla {
     display: table-caption;
     font-size: 1.2em;
@@ -205,15 +209,19 @@ div.tituloTabla {
     padding: 10px;
 }
 
+/* Regla de estilo para las filas de una tabla
+   usadas para  las tablas*/
 div.fila {
     display: table-row;
 }
 
+/* Regla de estilo para las celdas de una tabla */
 div.celda {
     display: table-cell;
     padding: 5px;
 }
 
+/* Regla de estilo para las celdas de una tabla */
 div.celda.derecha {
     display: table-cell;
     text-align: right;
