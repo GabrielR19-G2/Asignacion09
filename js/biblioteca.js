@@ -1,4 +1,6 @@
 /**
+ * biblioteca.js
+ * 
  * Contiene las opciones y las funciones a llamar en los menús de la aplicación.
  * 
  * Karla Ximena Islas Cruz ID: 213090
@@ -8,8 +10,7 @@
 // Opciones del menu principal de la aplicacion 
 let menuPrincipalItems = ["Catálogo de revistas", "Inventario de revistas"];
 
-// Funciones que implementan las operaciones de las opciones
-// del menu principal de la aplicacion 
+// Funciones que implementan las operaciones de las opciones del menu principal de la aplicacion 
 let menuPrincipalFunciones = ["despliegaMenuRevistas()", 
                               "despliegaMenuInventario()"];
 
@@ -19,7 +20,7 @@ const menuRevistasItems = ["Agregar revista", "Actualizar revista",
                            "Página Inicial"];
 
 // Funciones que implementan las operaciones con las revistas                         
-const menuRevistasFunciones = ["capturaIsbn()", "", "", "",  
+const menuRevistasFunciones = ["capturaIsbn()", "", "", "despliegaRevistas()",  
                                "despliegaMenuPrincipal()"];
 
 // Opciones del menu de las operaciones con el inventario de revistas  

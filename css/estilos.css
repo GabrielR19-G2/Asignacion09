@@ -1,10 +1,10 @@
 /* 
-    estilos.css
-
-    Establece las reglas de estilo para la aplicacion bibliotecaWeb.
-
-    Karla Ximena Islas Cruz ID: 213090
-    Gabriel Francisco Piñuelas Ramos ID: 230626
+ * estilos.css
+ *
+ * Establece las reglas de estilo para la aplicacion bibliotecaWeb.
+ *
+ * Karla Ximena Islas Cruz ID: 213090
+ * Gabriel Francisco Piñuelas Ramos ID: 230626
 */
 
 /* Este es el contenedor grid para la distribución de la página. 
@@ -56,10 +56,9 @@ nav button {
     cursor: pointer;
 }
 
+/* Regla de estilo para los elementos h1 y h2*/
 main h1,
-h2,
-h3,
-h4 {
+h2 {
     text-align: center;
     font-size: 25px;
     color: rgb(67, 36, 108);
@@ -75,21 +74,23 @@ footer {
     background: rgb(255, 239, 217);
 }
 
+/* Regla de estilo para la imagen de logo */
 img.logo {
     float: left;
     width: 176px;
     height: 75px;
 }
 
+/* Regla de estilo para los elementos de un formulario*/
 .contenedorFormulario {
     display: grid;
     margin: auto;
-    grid-template-columns: 50% auto auto;
+    grid-template-columns: 50% 50%;
     gap: 5px;
 }
 
 .contenedorFormulario>div.span {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
 }
 
 .contenedorFormulario>div.centrada {
@@ -102,47 +103,116 @@ img.logo {
     text-align: right;
 }
 
+/* Regla de estilo para alinear al centro los elementos div */
 div.centrada {
     text-align: center;
 }
 
-table#lista {
-    margin: auto;
-    border: 3px double rgb(3, 4, 94);
-    caption-side: top;
-    border-collapse: collapse;
-    empty-cells: show;
-    vertical-align: middle;
+/* Regla de estilo para elementos de entrada de solo lectura */
+input[readonly] {
+    background-color: #ddd;
 }
 
+/* Regla de estilo para centrar una tabla */
 table.centrada {
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Regla de estilo para centrar horizontalmente una tabla.
+   usada para  las tablas en la que se despliegan las listas */
+table.bicolor {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+/* Regla de estilo para los titulos de las tablas */
 caption {
     caption-side: top;
     margin-bottom: 0.5em;
+    font-size: 150%;
     font-weight: bold;
+    color: rgb(67, 36, 108);
 }
 
-table#lista td {
-    padding: 10px;
-    border: 0.5px solid rgb(3, 4, 94);
+/* Regla de estilo para los renglones nones de una tabla.
+   Se usa para  las tablas en la que se despliegan las listas */
+table.bicolor tr:nth-child(odd) {
+    background-color: rgb(255, 228, 239);
 }
 
+/* Regla de estilo para los renglones pares de una tabla.
+   Se usa para  las tablas en la que se despliegan las listas */
+table.bicolor tr:nth-child(even) {
+    background-color: rgb(255, 205, 223);
+}
+
+/* Regla de estilo para celdas de tabla con encabezados */
+th {
+    text-align: center;
+    background-color: rgb(253, 251, 249);
+    border: 1px solid #888;
+}
+
+/* Regla de estilo para celdas de tabla con encabezados
+   usadas para colocar los mensajes de error */
+th.error {
+    text-align: right;
+    padding-right: 5px;
+    background-color: #fff;
+    border-style: none;
+}
+
+/* Regla de estilo para justificar a la derecha las celdas de tabla
+   usadas en las celdas que tienen las etiquetas de los elementos
+   de entrada de un formulario y en las celdas que se despliegan
+   los nombres de los miembros de un objeto */
 td.derecha {
-    font-weight: bold;
     text-align: right;
     padding-right: 5px;
 }
 
 /* Regla de estilo para las celdas de tabla con fondo gris
-       usadas en las celdas que se despliegan los valores de 
-       los miembros de un objeto */
+   usadas en las celdas que se despliegan los valores de 
+   los miembros de un objeto */
 td.gris {
     background-color: #ddd;
     padding-left: 5px;
     padding-right: 5px;
     border: 1px solid #888;
+}
+
+/* Regla de estilo para las celdas de una tabla
+   usadas para  las tablas en la que se despliegan las listas */
+table.bicolor td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+}
+
+div.tabla {
+    display: table;
+    margin: auto;
+}
+
+div.tituloTabla {
+    display: table-caption;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+div.fila {
+    display: table-row;
+}
+
+div.celda {
+    display: table-cell;
+    padding: 5px;
+}
+
+div.celda.derecha {
+    display: table-cell;
+    text-align: right;
 }
